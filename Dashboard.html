@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-image: url('Background.avif');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            display: flex;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px; /* Adjust the width as needed */
+            margin: 0 auto; /* Center the content container */
+        }
+
+        .image-container {
+            max-width: 400px; /* Adjust the width as needed */
+            overflow: hidden;
+            margin-right: 20px; /* Add a gap between image and text */
+        }
+
+        .slideshow-container {
+            width: 100%;
+            position: relative;
+        }
+
+        .mySlides {
+            display: none;
+            max-width: 100%; /* Make slides responsive */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .text-container {
+            max-width: 500px; /* Adjust the width as needed */
+            margin-top: 20px; /* Lower the text position */
+        }
+
+        h2.green-container {
+            background-color: #4caf50;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: medium;
+        }
+
+        p {
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <div class="image-container">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="1.png" alt="Image 1">
+                </div>
+                <div class="mySlides">
+                    <img src="2.png" alt="Image 2">
+                </div>
+            </div>
+        </div>
+
+        <div class="text-container">
+            <h2 class="green-container">My Intro</h2>
+            <p>
+                Hi, I'm Vimal Suresh, You already know. I am 21 Year's old coming from Palai, Kerala. I am an engineering student hoping for a bright future and adventurous life.
+                I am usually a quiet person who wants to live a decent life in a decent manner.
+            </p>
+
+            <h2 class="green-container">My Journey</h2>
+            <p>
+                I started my Education in 2005 when I joined kindergarten and studied my way to LP and UP in St. Thomas School Neeranthanam. A lovely and quiet school built on beautiful slopes village hill overlooking a the church tower and a church hall behind it at the top of the hill. Then I went to 
+                high school in Ramapuram which named St. Augustines. I selected science for higher secondary in the same school after passing SSLC in 2018. After finishing my higher secondary, I joined St. Joseph's College of Engineering and Technology, Palai for my professional studies. I selected CS for its opportunities 
+                and its creative profession. I am going to finish my professional degree 2024.
+            </p>
+
+            <h2 class="green-container">My Plan for the Future</h2>
+            <p>
+                Looking ahead, my plan is to be placed at a job that has a decent pay and should allow growth. I am hoping my life will be settled around late 30's years old and choose to do what I like after that. I am one of the guys that believe that doing the same job will be boring. Even if everything doesn't go according to plan,
+                it's okay because life doesn't go on plan and life without struggle is not worth it.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 8000);
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>

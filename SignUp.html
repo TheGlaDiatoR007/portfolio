@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Signup Page</h1>
+    </header>
+    
+
+    <div class="main">
+        <form action="#">
+            <div class="firstname">
+                <label for="fname">FirstName</label>
+                <input type="text" id="fname" name="fname">
+            </div>
+            <div class="lastname">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname">
+            </div>
+            <div class="dob">
+                <label for="dob">DOB</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="sex">
+                <label for="sex">Sex</label>
+                <label for="male">Male</label>
+                <input type="checkbox" name="male" id="male" value="male">
+                <label for="female">Female</label>
+                <input type="checkbox" name="female" id="female" value="female">
+                <label for="others">Others</label>
+                <input type="checkbox" name="others" id="others" value="others">
+            </div>
+            <div class="religion">
+                <label for="religion">Religion</label>
+                <select name="religion" id="religion">
+                    <option value="hindu" >Hindu</option>
+                    <option value="christ">Christ</option>
+                    <option value="muslim">Muslim</option>
+                </select>
+            </div>
+            <div class="holidays">
+                <label for="holi">No.of.Holidays</label>
+                <input type="number" name="holi" id="holi" max="5" min="1">
+            </div>
+            <div class="filedocument">
+                <label for="file">Salary Certificate</label>
+                <input type="file" name="file" id="file">
+            </div>
+            <div class="phone">
+                <label for="phone">PhoneNumber</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="salary">
+                <label for="salary">Salary</label>
+                <input type="range" name="salary" id="salary" max="100000" min="15000">
+            </div>
+            <div class="image">
+                <label for="image">Image</label>
+                <input type="image" src="#" alt="profile image">
+            </div>
+            <div class="urls">
+                <label for="url">Github</label>
+                <input type="url" name="url" id="url">
+            </div>
+            <div class="buttons">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2023 Your Name
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            width: fit-content;
+            margin: 0 auto; /* Center align the h1 element */
+            background-color: #4caf50;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .contact-details {
+            text-align: center;
+        }
+
+        
+        .contact-form {
+            text-align: center;
+            color: #fff;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            color: #000000; /* Set text color to white */
+        }
+        .maprouter {
+              text-align: center;
+            margin: 20px 0;
+        }
+
+
+        .form-submit {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Contact Me</h1>
+    
+    <div class="container">
+        <div class="contact-details">
+            <h2>Contact Details</h2>
+            <p>Email: vimalsuresh2002@gmail.com</p>
+            <p>Phone: 9061488741</p>
+        </div>
+
+        
+            <div  style="align-items: center;"class="maprouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=palai&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 810px; height: 450px;"></iframe><style>.mapouter{position:relative;height:450px;width:810px;background:#fff;} .maprouter a{color:#fff !important;position:absolute !important;top:0 !important;z-index:0 !important;}.gmap_canvas{overflow:hidden;height:450px;width:810px}.gmap_canvas iframe{position:relative;z-index:2}</style></div></div>
+      
+
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <input type="text" class="form-input" name="name" placeholder="Your Name" required>
+                <input type="email" class="form-input" name="email" placeholder="Your Email" required>
+                <textarea class="form-input" name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+  
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills and Achievement</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+}
+
+nav {
+    background-color: rgb(0, 176, 21);
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center-align the list */
+    flex-wrap: wrap; /* Allow the list items to wrap onto the next line */
+}
+
+li {
+    margin: 10px 120px; /* Adjust margin as needed for spacing */
+    text-align: center; /* Center-align the list items */
+    width: 750px; /* Set a fixed width for each list item */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #000000;
+}
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply the circular bullets to inner unordered lists */
+ul ul {
+    list-style-type: none;
+    margin-left: 20px; /* Adjust the indentation of the inner list */
+}
+
+li ul li {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+/* Create circular bullets with white background */
+li ul li:before {
+    content: '\2022'; /* Unicode character for a bullet point */
+    color: #fff; /* Set the color of the bullet to white */
+    background-color: #fff; /* Set the background color to white */
+    border-radius: 50%; /* Create a circular shape */
+    padding: 0 5px; /* Adjust padding as needed */
+    margin-right: 5px; /* Adjust margin as needed */
+}
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li style="width: 50px;"><a href="#skills">My Skills</a></li>
+            <li style="width: 50px;"><a href="#projects">My Projects</a></li>
+            <li style="width: 50px;"><a href="#hobbies">My Hobbies</a></li>
+            <li style="width: 50px;"><a href="#achievements">My Achievements</a></li>
+            <li style="width: 50px;"><a href="#services">My Services</a></li>
+        </ul>
+    </nav>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ol>
+            <li> Software languages
+                <ul>
+                    <li>c</li>
+                    <li>mySql</li>
+                    <li>Flutter</li>
+                    <li>Python</li>
+                </ul>
+            </li> 
+            <li> Software Design
+                <ul>
+                    <li>c</li>
+                    <li>Figma</li>
+                    <li>Lucidchart</li>
+                </ul>
+            </li> 
+            <li> Communication
+                <ul>
+                    <li>c</li>
+                    <li>English</li>
+                    <li>Malayalam</li>
+                </ul>
+            </li> 
+        </ol>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <ol><li><ul>
+            <li>Ente Gramam- A mobile application that allow government employers to connect with users</li>
+            <li>Attendie-An online attendance system</li>
+            <li>A single axis solar tracker using Arduino and Ldr</li>
+        </li>
+        </li>
+        </ol>
+        <!-- Add content related to your projects -->
+    </section>
+
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <ol><li><ul>
+            <li>Reading Books</li>
+            <li>Playing Chess</li>
+            <li>Watching movies</li>
+        </li>
+        </li>
+        </ol>
+        <!-- Add content related to your hobbies -->
+    </section>
+
+    <section id="achievements">
+        <h2>My Achievements</h2>
+        <ol><li><ul>
+            <li>Nptel Database Management System Certificate</li>
+            <li>Digital garage certificate google</li>
+            <li>C training by IIT bombay</li>
+        </li>
+        </li>
+        </ol>
+        <!-- Add content related to your achievements -->
+    </section>
+
+    <section id="services">
+        <h2>My Services</h2>
+        <ol><li><ul>
+            <li>Applicatuib deveolpment and design</li>
+            <li>Design</li>
+            <li>Data anylsis</li>
+            <li>Quality aassurance</li>
+        </li>
+        </li>
+        </ol>
+        <!-- Add content related to your services -->
+    </section>
+
+</body>
+</html>
